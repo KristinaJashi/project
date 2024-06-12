@@ -1,0 +1,226 @@
+<div class="header_section d-flex justify-content-center">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light" style="width: 100%;">
+        <div class="logo">
+            <a ><img src="../../../assets/img/logo.png"
+            (click)="navigation('HOME')">
+            </a>
+        </div>
+        <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" 
+                data-target="#navbarSupportedContent" 
+                aria-controls="navbarSupportedContent" 
+                aria-expanded="false" 
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+        </button> -->
+        <div class="collapse navbar-collapse" id="navbarSupportedContent" style="display: flex; justify-content: center;">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="nav-link" style="cursor: pointer;"
+                (click)="navigation('HOME')">HOME</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" style="cursor: pointer;"
+                (click)="navigation('ABOUT')">ABOUT</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" style="cursor: pointer;"
+                (click)="navigation('OUR-PRODUCTS')">OUR PRODUCTS</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" style="cursor: pointer;"
+                (click)="navigation('CONTACT-US')">CONTACT US</a>
+            </li>
+            <!-- <li class="nav-item">
+              <a class="nav-link" href="#"><img src="images/search-icon.png"></a>
+            </li> -->
+            <li class="nav-item ">
+              <button class="nav-link" data-bs-toggle="modal" data-bs-target="#SIGN-IN">
+                SIGN IN
+              </button>
+           
+            </li>
+            <li class="nav-item">
+              <button class="nav-link" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                REGISTER
+              </button>
+              <!-- <a class="nav-link" 
+                  (click)="registration()">REGISTER</a> -->
+            </li>
+          </ul>
+        </div>
+    </nav>
+</div>
+
+<!--sign-up Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" 
+        aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">REGISTER</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <form [formGroup]="signupForm" (ngSubmit)="onSubmit()">
+        <div class="modal-body">
+
+          <div class="mb-3">
+            <!-- <label for="exampleFormControlInput1" class="form-label">first name</label> -->
+            <input type="text" 
+                  class="form-control" 
+                  id="exampleFormControlInput1" 
+                  placeholder="name"
+                  name="firstName"
+                  formControlName="firstName">
+          </div>
+
+          <div class="mb-3">
+            <!-- <label for="exampleFormControlInput1" class="form-label">last mname</label> -->
+            <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="last name"
+                    name="lastName"
+                    formControlName="lastName">
+          </div>
+
+          <div class="mb-3">
+            <input type="number" class="form-control" id="exampleFormControlInput1" placeholder="age"
+                    name="age"
+                    formControlName="age">
+          </div>
+
+          <div class="mb-3">
+            <!-- <label for="exampleFormControlInput1" class="form-label">first name</label> -->
+            <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="address"
+                    name="address"
+                    formControlName="address">
+          </div>
+
+          <div class="mb-3">
+            <!-- <label for="exampleFormControlInput1" class="form-label">first name</label> -->
+            <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="phone"
+                    name="phone"
+                    formControlName="phone">
+          </div>
+
+          <div class="mb-3">
+            <!-- <label for="exampleFormControlInput1" class="form-label">first name</label> -->
+            <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="zipcode"
+                  name="zipcode"
+                  formControlName="zipcode">
+          </div>
+
+          <div class="mb-3">
+            <label for="formFile" class="form-label">avatar</label>
+            <input class="form-control" type="file" id="formFile"
+                    name="avatar"
+                    formControlName="avatar">
+          </div>
+
+          <div class="email-password d-flex align-items-baseline">
+
+            <div class="mb-3" style="width: 90%;">
+              <label for="exampleFormControlInput1" class="form-label">Email address</label>
+              <input type="email" class="form-control" id="exampleFormControlInput1" 
+                      placeholder="tset@gmail.com"
+                      name="email"
+                      formControlName="email">
+            </div>
+    
+            <div class="row align-items-center" style="width: 90%;">
+              <div class="mb-3">
+                <label for="inputPassword6" class="col-form-label">Password</label>
+                <input type="password" id="inputPassword6" class="form-control" 
+                      aria-describedby="passwordHelpInline"
+                      name="password"
+                      formControlName="password">
+              </div>
+              <!-- <div class="col-auto">
+                <span id="passwordHelpInline" class="form-text">
+                  Must be 8-20 characters long.
+                </span>
+              </div> -->
+            </div>
+          </div>
+
+          <div class="gender" style="display: flex; margin-top: 10px;">
+
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="flexRadioDefault" 
+                    id="flexRadioDefault1"
+                    name="gender"
+                    formControlName="gender"
+                    value="MALE"
+                    >
+              <label class="form-check-label" for="flexRadioDefault1">
+                male
+              </label>
+            </div>
+
+            <div class="form-check ms-3">
+              <input class="form-check-input" type="radio" name="flexRadioDefault" 
+                    id="flexRadioDefault2" 
+                    name="gender"
+                    formControlName="gender"
+                    value="FEMALE">
+              <label class="form-check-label" for="flexRadioDefault2">
+                female
+              </label>
+            </div>
+
+          </div>
+
+        </div>
+
+        <div class="modal-footer">
+          <!-- <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button> -->
+          <button type="submit" class="btn btn-primary">Registration</button>
+        </div>
+
+      </form>
+
+    </div>
+  </div>
+</div>
+
+<!-- sign-in modal -->
+<div class="modal fade" id="SIGN-IN" tabindex="-1" aria-labelledby="exampleModalLabel" 
+        aria-hidden="true">
+  <div class="modal-dialog">
+      <div class="modal-content">
+
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Sign in</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+
+          <div class="modal-body">
+
+              <div class="mb-3">
+                <!-- <label for="exampleFormControlInput1" class="form-label">first name</label> -->
+                <input type="text" 
+                      class="form-control" 
+                      id="exampleFormControlInput1" 
+                      placeholder="email"
+                      [(ngModel)]="email">
+              </div>
+
+              <div class="mb-3">
+                <!-- <label for="exampleFormControlInput1" class="form-label">last mname</label> -->
+                <input type="password" class="form-control" 
+                        id="exampleFormControlInput1" 
+                        placeholder="password"
+                        [(ngModel)]="password">
+              </div>
+
+              <div class="modal-footer">
+                <!-- <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button> -->
+                <button type="submit" class="btn btn-primary"
+                        (click)="signIn()">Sing-in</button>
+              </div>
+
+          </div>
+
+      </div>
+  </div>
+</div>

@@ -1,0 +1,81 @@
+.product_section{
+    width: 100%;
+    float: left;
+}
+.product_section_2 {
+    width: 100%;
+    float: left;
+}
+
+.product_text{
+    width: 100%;
+    float: left;
+    font-size: 50px;
+    color: #24292f;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.long_text{
+    width: 100%;
+    float: left;
+    font-size: 16px;
+    color: #363636;
+    margin-left: 0px;
+    text-align: center;
+}
+.price_text {
+    width: 100%;
+    float: left;
+    font-size: 30px;
+    color: #5ca0e9;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-align: center;
+    padding-top: 40px;
+}
+
+.game_text {
+    width: 100%;
+    float: left;
+    font-size: 30px;
+    color: #2d343e;
+    text-align: center;
+}
+
+.see_main{
+    width: 17%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+
+.see_main{
+    width: 17%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.see_bt {
+    width: 100%;
+    float: right;
+    font-size: 18px;
+    text-align: center;
+    background-color: #fcfcfd;
+    color: #191919;
+    border-left: 10px solid #599ee9;
+    border-radius: 30px;
+    border-right: 10px solid #599ee9;
+    border-top: 4px solid #599ee9;
+    border-bottom: 4px solid #599ee9;
+    padding: 5px 0px;
+    margin-top: 40px;
+}
+
+.see_bt a{
+    color: #191919;
+}
+.see_bt a:hover{
+    color: #599ee9;
+}

@@ -1,0 +1,123 @@
+
+.about_section{
+    width: 100%;
+    float: left;
+    background-color: #f2f7fd;
+    height: auto;
+    padding-bottom: 90px;
+}
+
+.section_footer {
+    width: 100%;
+    float: left;
+    background-color: rgb(41, 40, 40);
+    height: auto;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.footer_section_2 {
+    width: 100%;
+    float: left;
+    border-bottom: 1px solid #898989;
+    padding-bottom: 40px;
+}
+
+.about_text{
+    width: 100%;
+    float: left;
+    font-size: 50px;
+    color: #2d343e;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-align: right;
+}
+
+.lorem_text{
+    width: 100%;
+    float: left;
+    font-size: 16px;
+    color: #2d343e;
+    margin-left: 0px;
+    text-align: right;
+}
+
+.shop_bt_2 {
+    width: 35%;
+    float: right;
+    font-size: 18px;
+    text-align: center;
+    background-color: #fcfcfd;
+    color: #191919;
+    border-left: 10px solid #599ee9;
+    border-radius: 30px;
+    border-right: 10px solid #599ee9;
+    border-top: 4px solid #599ee9;
+    border-bottom: 4px solid #599ee9;
+    padding: 5px 0px;
+    margin-top: 40px;
+}
+.layout_padding {
+    padding-top: 90px;
+    padding-bottom: 0px;
+}
+
+.image_2 {
+    width: 100%;
+    float: left;
+    padding-top: 50px;
+}
+
+.account_text {
+    width: 100%;
+    float: left;
+    font-size: 28px;
+    color: rgb(235, 235, 235);
+    font-weight: bold;
+    padding: 25px 0px;
+}
+
+.useful_link{
+    width: 100%;
+    float: left;
+}
+
+.email_text {
+    width: 100%;
+    float: left;
+    font-size: 12pt;
+    color: #eceaea;
+    background-color: #ffffff;
+    padding: 10px;
+    border: 0px;
+}
+
+.subscribr_bt {
+    width: 60%;
+    float: left;
+    font-size: 16pt;
+    color: #eceaea;
+    background-color: #599ee9;
+    padding: 5px 0px;
+    border: 0px;
+    text-align: center;
+    margin-top: 20px;
+    font-weight: 600;
+}
+
+.social_icon {
+    width: 19%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.social_icon ul{
+    margin: 0px;
+    padding: 0px;
+}
+
+.social_icon li {
+    float: left;
+    padding-right: 20px;
+    padding-top: 40px;
+}
